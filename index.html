@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Realtime Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Braniac</h1>
+    <div class="mode-toggle">
+      <label for="dark-mode-toggle">Dark Mode</label>
+      <input type="checkbox" id="dark-mode-toggle">
+    </div>
+  </header>
+  <div class="container">
+    <div class="quiz-container">
+      <div class="question-container">
+        <div id="question"></div>
+        <div id="timer">Timer: <span id="time-left"></span></div>
+      </div>
+      <div id="options"></div>
+      <div id="result"></div>
+      <div class="lifeline-container">
+        <button class="lifeline-button" id="fifty-fifty">50:50</button>
+        <button class="lifeline-button" id="skip">Skip</button>
+      </div>
+    </div>
+    <div class="score-container">
+      <h2>Score: <span id="score">0</span></h2>
+      <h3>Life Lines:</h3>
+      <div id="lifelines">
+        <div class="lifeline" id="fifty-fifty-lifeline">50:50 (2)</div>
+        <div class="lifeline" id="skip-lifeline">Skip (2)</div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
